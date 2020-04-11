@@ -1,0 +1,122 @@
+/* Navbar */
+.navbar {
+    position: relative;
+    z-index: 1;
+}
+.navbar-brand {
+    font-weight: bold;
+    font-size: 32px
+}
+
+/* Utility */
+.tombol {
+    text-transform: uppercase;
+    border-radius: 40px;
+    border-color: lightgreen;
+    background-color: rgba(0, 128, 0, 0);
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+/* Jumbotron */
+.jumbotron {
+    background-image: url(https://lh3.googleusercontent.com/WjO8dRi60Jn-6PVxrhnBaZc670novvI_bWn988aTNCb-GnLtUYUOaBYzawZRTd4Tyh0QunYLogTxzA9_w84drFkQgDb1uiAC17QjRvvSIGE5rUoWlHbZr5LGESL7zf_Qb0B8Rd78oMsV5LcthxwZ-7-uGyfgN2JhX2WMboyO46rYbnlxMTxtx9H461PM_BG1ewFNjAHAitt2PqOljb-oKOaxPn5M_xAYVNT3r9PqFv_NHpE4kKBfGu9zL-GTGKf5qvSDFWz4zIgCgEjRoAm8BS9obmrPENw0cnI-z8w9dFphd7bmznqCUAdcK1iJnl7HYarn6Yq-_9Fhg8tAnQGRsqf9UJrtOdzZLKdF5UuLxCrGg8qntUc4l74u18CAXdtPZ_XUmeZzu49ZvQrwIaZcYuIcdEzERVapKhWr-9g9x03Qhbvesn5HpQkB6Mh-EoVrTiOnk2xLq6XDcDV7PDHOAT6aGDldfSoPHgjiVj46-xK5MPvOHCVbatClVX3ilsFrJKTYmawm_YvEV4pZgzC0mJbBK5AS7wZLmqrr_xjgeAp0JqzptBmCIZvWLZmM3DcaEm14b595rMcEeKyxKR2CmnkQ0tfFLnalK1jwPhdy7LZey4yPm8aLEOQqtIpREE81t_GodnFFt3N7fyRpQlRktuyp4HIFaS4ADRFx9B5qXW7z7rvKcxHd1FqwGOYQ=w1990-h1332-no);
+    background-size: cover;
+    background-position: 50%;
+    height: 640px;
+    text-align: center;
+    position: relative;
+}
+
+.jumbotron::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(0,0,0,1),rgba(0,0,0,0));
+    position: absolute;
+    bottom: 0;
+}
+
+.jumbotron .container {
+    z-index: 1;
+    position: relative;
+}
+
+.jumbotron .display-4 {
+    color: rgba(255, 255, 255, 0.850);
+    margin-top: 80px;
+    font-weight: bold;
+}
+
+.jumbotron .lead {
+    font-weight: 250px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.jumbotron .lead span {
+    color: lightgreen;
+    font-weight: bold;
+}
+
+.lead {
+color: rgba(255, 255, 255, 0.850);
+}
+
+/* Countdown */
+.body, html {
+    height: 100%;
+    margin: 0;
+}
+
+
+.bottomleft {
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+hr {
+    margin: auto;
+    width: 40%;
+}
+/* eend of countdown */
+
+/* #####DESKTOP####### */
+@media (min-width: 992px) { 
+
+.navbar-brand,  .nav-link {
+    color: white ! important;
+}
+.nav-link  {   
+    text-transform: uppercase;
+    margin-right: 19px;
+}
+.nav-link:hover::after {
+    content:'';
+    display:block;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.534); 
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+}
+
+/* Jumbtron */
+    .jumbotron {
+    margin-top: -75px;
+}
+
+}
